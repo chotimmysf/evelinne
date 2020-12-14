@@ -5,11 +5,20 @@ import './App.css';
 
 import HomePage from './pages/homepage/homepage.component';
 
+const HeadwearPage = () => (
+  <div>
+    <h1>Headgear Page</h1>
+  </div>
+);
+
 function App() {
   return (
     <div class="App">
       <div>
-        <HomePage />
+        <Switch>
+          <Route path='/' component={HomePage} />
+          <Route path='/hats' component={HeadwearPage} />
+        </Switch>
       </div>
     </div>
   );
