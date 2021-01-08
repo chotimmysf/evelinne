@@ -11,13 +11,20 @@ const HeadwearPage = () => (
   </div>
 );
 
+const JewelryPage = () => (
+  <div>
+    <h1>Jewelry Page</h1>
+  </div>
+);
+
 function App() {
   return (
     <div class="App">
       <div>
         <Switch>
           <Route exact path='/' component={HomePage} />
-          <Route path='/hats' component={HeadwearPage} />
+          <Route path='/headwear' component={HeadwearPage} />
+          <Route path='/jewelry' component={JewelryPage} />
         </Switch>
       </div>
     </div>
